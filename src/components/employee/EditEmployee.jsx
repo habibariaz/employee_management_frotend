@@ -20,7 +20,7 @@ const EditEmployee = () => {
   useEffect(() => {
     const fetchEmployee = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/employees/${id}`, {
+        const response = await axios.get(`https://employee-management-backend-flame.vercel.app/api/employees/${id}`, {
           headers: {
             "Authorization": `Bearer ${localStorage.getItem("token")}`
           }
@@ -64,7 +64,7 @@ const EditEmployee = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:3000/api/employees/${id}`,
+        `https://employee-management-backend-flame.vercel.app/api/employees/${id}`,
         employee, {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`
