@@ -42,7 +42,7 @@ const EditDepartment = () => {
         e.preventDefault()
 
         try {
-            const response = await axios.put(`http://localhost:3000/api/department/${id}`, department, {
+            const response = await axios.put(`https://employee-management-backend-flame.vercel.app/api/department/${id}`, department, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem("token")}`
                 }
