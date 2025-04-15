@@ -19,8 +19,8 @@ const List = () => {
             try {
                 const url =
                     user.role === "admin"
-                        ? "http://localhost:3000/api/leave"
-                        : `http://localhost:3000/api/leave/${user._id}`;
+                        ? "https://employee-management-backend-flame.vercel.app/api/leave"
+                        : `https://employee-management-backend-flame.vercel.app/api/leave/${user._id}`;
 
                 const response = await axios.get(url, {
                     headers: {
