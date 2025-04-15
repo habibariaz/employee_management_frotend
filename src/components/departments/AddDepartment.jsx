@@ -20,7 +20,7 @@ const AddDepartment = () => {
         e.preventDefault()
 
         try {
-            const response = await axios.post("http://localhost:3000/api/department/add", department, {
+            const response = await axios.post("https://employee-management-backend-flame.vercel.app/api/department/add", department, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem("token")}`
                 }
