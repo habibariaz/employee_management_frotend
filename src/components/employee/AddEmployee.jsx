@@ -40,7 +40,7 @@ const AddEmployee = () => {
         })
 
         try {
-            const response = await axios.post("http://localhost:3000/api/employees/addEmployee",
+            const response = await axios.post("https://employee-management-backend-flame.vercel.app/api/employees/addEmployee",
                 formDataObj, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem("token")}`
